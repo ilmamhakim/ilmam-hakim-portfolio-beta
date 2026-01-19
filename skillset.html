@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skillset</title>
+<style>
+body{margin:0;padding:0;font-family:"Inter",Arial,sans-serif;background:linear-gradient(135deg,#dfe9f3 0%,#ffffff 100%);color:#333;}
+.container{max-width:900px;margin:60px auto;background:#fff;padding:40px 50px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.08);animation:fadeIn 0.8s ease-in-out;}
+h1{text-align:center;font-size:2.5rem;margin-bottom:20px;color:#222;}
+h2.section-title{text-align:center;font-size:1.8rem;margin-bottom:30px;color:#1a73e8;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.skill-card{background:#f7f7f7;padding:25px 20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;}
+.skill-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+.skill-title{font-size:1.3rem;margin-bottom:10px;color:#222;}
+.skill-list{list-style-type:disc;padding-left:20px;color:#555;}
+.skill-list li{margin-bottom:8px;}
+.cta-button{display:inline-block;text-decoration:none;background-color:#1a73e8;color:#fff;padding:12px 25px;border-radius:8px;font-size:1rem;margin-top:30px;text-align:center;transition:background-color 0.3s ease, transform 0.2s ease;}
+.cta-button:hover{background-color:#0c4da2;transform:translateY(-2px);}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+@media(max-width:600px){.container{padding:25px;margin:20px;}h1{font-size:2rem;}h2.section-title{font-size:1.5rem;}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Skillset</h1>
+<h2 class="section-title">Skillset</h2>
+
+<div class="skills-grid">
+<div class="skill-card">
+<h3 class="skill-title">Languages</h3>
+<ul class="skill-list">
+<li>Malay (Proficient)</li>
+<li>English (Proficient)</li>
+<li>Japanese (Proficient)</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3 class="skill-title">Coding Languages</h3>
+<ul class="skill-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>Python</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3 class="skill-title">Software Skills</h3>
+<ul class="skill-list">
+<li>Adobe Experience Manager (AEM)</li>
+<li>Microsoft Office</li>
+<li>Wondershare Filmora</li>
+</ul>
+</div>
+</div>
+
+<!-- CTA Button -->
+<div style="text-align:center;">
+    <a href="index.html" class="cta-button">Return to Portfolio</a>
+</div>
+
+</div>
+</body>
+</html>

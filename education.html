@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 40px 50px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        animation: fadeIn 0.8s ease-in-out;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #222;
+    }
+
+    h2.section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: #1a73e8;
+    }
+
+    .education-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .education-card {
+        background: #f7f7f7;
+        padding: 25px 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .edu-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .edu-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #222;
+    }
+
+    .edu-year {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .edu-desc {
+        color: #555;
+        line-height: 1.5;
+    }
+
+    /* CTA Button */
+    .cta-button {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #1a73e8;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-top: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #0c4da2;
+        transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width:600px){
+        .container { padding: 25px; margin: 20px; }
+        h1 { font-size: 2rem; }
+        h2.section-title { font-size: 1.5rem; }
+        .edu-logo { width: 60px; height: 60px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Education</h1>
+<h2 class="section-title">Educational Background</h2>
+
+<div class="education-grid">
+
+    <!-- University of Toyama -->
+    <div class="education-card">
+        <img src="./assets/tomidai.png" alt="University of Toyama Logo" class="edu-logo">
+        <h3 class="edu-title">University of Toyama, Japan</h3>
+        <p class="edu-year">2011 – 2016</p>
+        <p class="edu-desc">Degree in Environmental Applied Chemistry</p>
+    </div>
+
+    <!-- SEKOLAH MENENGAH SAINS KUALA SELANGOR -->
+    <div class="education-card">
+        <img src="./assets/kusess.png" alt="Sekolah Menengah Sains Kuala Selangor Logo" class="edu-logo">
+        <h3 class="edu-title">Sekolah Menengah Sains Kuala Selangor</h3>
+        <p class="edu-year">2004 – 2008</p>
+        <p class="edu-desc">Sijil Pelajaran Malaysia (SPM)</p>
+    </div>
+
+</div>
+
+<!-- CTA Button -->
+<div style="text-align:center;">
+    <a href="index.html" class="cta-button">Return to Portfolio</a>
+</div>
+
+</div>
+</body>
+</html>

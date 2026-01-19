@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            animation: fadeIn 0.8s ease-in-out;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        h2.name {
+            font-size: 1.8rem;
+            margin: 15px 0 25px 0;
+            color: #1a73e8;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0c4da2;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        @media(max-width:600px){
+            .container { padding: 25px; margin: 20px;}
+            h1 { font-size: 2rem;}
+            h2.name { font-size: 1.5rem; }
+            img { width: 200px; height: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>About Me</h1>
+    <img src="./assets/profile-pic-1.jpg" alt="Hakim Razali">
+    
+    <!-- Name below the image -->
+    <h2 class="name">Hakim Razali</h2>
+
+    <p>Digital Executive at NMQ Digital with 4 years of experience in web content management and proficiency in Adobe Experience Manager.</p>
+    <p>Fluent in Malay, English, and Japanese, with 9 years of experience supporting the Japanese market and a JLPT Level 2 certification.</p>
+    <p>Basic knowledge of HTML, CSS, and Python. Engineering student at the University of Toyama in Environmental Applied Chemistry.</p>
+    <p>A gamer and avid fan of SRG.OG e-sports team in Mobile Legends Bang Bang (MLBB). Enthusiastic about learning, coding, and web development.</p>
+
+    <!-- CTA Button -->
+    <div>
+        <a href="index.html" class="cta-button">Return to Portfolio</a>
+    </div>
+</div>
+
+</body>
+</html>

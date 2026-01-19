@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKIM RAZALI</title>
+    <style>
+        /* ---- GLOBAL STYLES ---- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        img {
+            width: 300px;        /* Responsive width */
+            height: 300px;       /* Fixed height for square/circular display */
+            border-radius: 50%;  /* Circular image */
+            object-fit: cover;   /* Ensures image is not stretched */
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #1a73e8;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0c4da2;
+        }
+
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+
+        <!-- Profile Image -->
+        <a href="./about me.html">
+            <img src="./assets/profile-pic-1.jpg" alt="Hakim Razali">
+        </a>
+
+        <!-- Navigation Links -->
+        <p>
+            <a href="about me.html">About Me</a>
+        </p>
+        <p>
+            <a href="education.html">Educational Background</a>
+        </p>
+        <p>
+            <a href="skillset.html">Skills</a>
+        </p>
+        <p>
+            <a href="works.html">Clients and Works</a>
+        </p>
+    </div>
+</body>
+</html>
